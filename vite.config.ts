@@ -9,7 +9,7 @@ export default defineConfig({
     vue(),
     VueSetupExtend()
   ],
-  base: '/myVue3/'
+  base: '/'
   ,
   resolve: {
     alias: {
