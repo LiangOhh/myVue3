@@ -9,6 +9,8 @@ export default defineConfig({
     vue(),
     VueSetupExtend()
   ],
+  base: '/myVue3/'
+  ,
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
