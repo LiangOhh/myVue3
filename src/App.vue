@@ -1,26 +1,8 @@
 <template>
   <div class="my">
-    <!-- <div>
-      <h1 ref="myAppRef">hello world</h1>
-      <button @click="btn">获取ref</button>
-    </div>
-    这是我的第一个vue3项目
-    <FirstOne></FirstOne>
-    第二个组件
-    <SecondTwo></SecondTwo>
-    第三个组件
-    <ThirdThree></ThirdThree>
-    汽车组件
-    <Car></Car>
-    计算属性
-    <Mycomputed></Mycomputed>
-    监视属性
-    <Mywatch></Mywatch>
-    标签属性
-    <Myref ref="comRef"></Myref>
-    <Person :firstPerson="myperson"></Person> -->
-
     <div>
+      111111111111
+      {{ a }}
       {{ num }}
       <button @click="addNumber">button</button>
       <br>
@@ -30,12 +12,9 @@
       <br>
       <hr>
       <button @click="showDiv">button</button>
-
     </div>
   </div>
 </template>
-
-
 <script lang="ts" setup name="App">
 import FirstOne from './components/FirstOne.vue'
 import SecondTwo from './components/SecondTwo.vue'
@@ -51,6 +30,7 @@ import useBase from './hooks/useBase'
 const { num, num2, num3, num4, addNumber, addNumber2, showDiv } = useBase()
 let myAppRef = ref()
 let comRef = ref()
+let a = ref(122222)
 async function btn() {
   //  let myAppRef = await ref()
   console.log(myAppRef.value)
